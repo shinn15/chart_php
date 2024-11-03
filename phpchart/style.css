@@ -1,0 +1,100 @@
+/* Custom properties/variables  */
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem; /* 18px */
+  font-weight: 400;
+  line-height: 1.4;
+  color: #ffff;
+  background-color: #1b1b32;
+ 
+}
+
+h1,
+h2,
+select {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card-body{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+
+/* nav */
+a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+ul {
+  list-style: none;
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--main-blue);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.bar-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+@media (max-width: 28.75em) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .bar-list {
+    margin: 0 1rem;
+  }
+}
+
+.bar-list a {
+  display: block;
+  font-size: 2.2rem;
+  padding: 2rem;
+}
+
+.bar-list a:hover {
+  background: var(--main-blue);
+}
+
